@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.19'
 gem 'bootstrap-sass', '2.1'
+gem 'haml-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -26,7 +27,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 # Gems used only for assets and not required
