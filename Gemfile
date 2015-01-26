@@ -3,7 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.19'
 gem 'bootstrap-sass', '2.1'
 gem 'haml-rails'
+gem 'bcrypt-ruby', '3.0.1'
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -26,10 +31,7 @@ group :test do
   gem 'capybara', '1.1.2'
 end
 
-group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
