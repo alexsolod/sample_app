@@ -56,14 +56,14 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
-/* text-transform: uppercase; */
-  letter-spacing: -1px;
+  text-transform: none;
+  letter-spacing: 1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: #fff;
-    text-decoration: none;
+    color: $grayLight;
+    text-decoration: underline;
   }
 }
 /* footer */
@@ -93,4 +93,13 @@ footer {
   		margin-left: 10px;
 		}
 	}
+}
+.btn {
+ font-weight: bold; 
+&:hover {
+    color: $grayLight;
+}
+}
+.container {
+  height: 10px ;
 }
